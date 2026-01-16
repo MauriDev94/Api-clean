@@ -5,5 +5,5 @@ from app.core.providers.env_config import get_env_config
 
 
 def get_db_session() -> Generator[Session, None, None]:
-    session = Database(get_env_config()).get_session()
-    return session
+    database = Database(get_env_config())
+    yield from database.get_session()

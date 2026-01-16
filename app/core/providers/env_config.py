@@ -7,6 +7,6 @@ def get_env_config() -> EnvConfig:
     """get environmet cofiguration
 
     Returns:
-        EnvConfig: _description_
+        EnvConfig
     """
     return EnvConfig()  # type: ignore
