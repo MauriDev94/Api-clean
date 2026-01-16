@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
-from app.features.admin.country.domain.country_entity import Country
-from app.features.admin.country.domain.create_country_params import CreateCountryParams
-from app.features.admin.country.domain.update_country_params import UpdateCountryParams
+from app.features.admin.country.domain.entities.country_entity import Country
+from app.features.admin.country.domain.dto.create_country_params import CreateCountryParams
+from app.features.admin.country.domain.dto.update_country_params import UpdateCountryParams
 
 
 class CountryDatasource(ABC):
