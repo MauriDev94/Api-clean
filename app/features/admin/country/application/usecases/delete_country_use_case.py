@@ -1,4 +1,4 @@
-from typing import override
+from typing_extensions import override
 from app.common.use_case import UseCase
 from app.features.admin.country.application.contracts.country_datasource import CountryDatasource
 

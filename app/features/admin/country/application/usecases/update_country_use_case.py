@@ -1,8 +1,8 @@
-from typing import override
+from typing_extensions import override
 from app.common.use_case import UseCase
 from app.features.admin.country.application.contracts.country_datasource import CountryDatasource
-from app.features.admin.country.domain.country_entity import Country
-from app.features.admin.country.domain.update_country_params import UpdateCountryParams
+from app.features.admin.country.domain.entities.country_entity import Country
+from app.features.admin.country.domain.dto.update_country_params import UpdateCountryParams
 
 
 class UpdateCountry(UseCase[UpdateCountryParams, Country]):
